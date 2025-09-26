@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <display-name>AirlineReservation</display-name>
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlets -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.pace.airline.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletInsert</servlet-name>
+        <servlet-class>com.pace.airline.ServletInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PassengersListServlet</servlet-name>
+        <servlet-class>com.pace.airline.PassengersListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletDelete</servlet-name>
+        <servlet-class>com.pace.airline.ServletDelete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletUpdate</servlet-name>
+        <servlet-class>com.pace.airline.ServletUpdate</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletInsert</servlet-name>
+        <url-pattern>/addPassenger</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PassengersListServlet</servlet-name>
+        <url-pattern>/listPassengers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletDelete</servlet-name>
+        <url-pattern>/deletePassenger</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletUpdate</servlet-name>
+        <url-pattern>/updatePassenger</url-pattern>
+    </servlet-mapping>
+</web-app>

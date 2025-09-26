@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Airline Reservation</title>
+    <style>
+        body {
+            background-image: url("airplane.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: red;
+        }
+        h3 {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Welcome To Airline Reservation System</u></h2>
+    <!-- passenger Form -->
+    <form action="addPassenger" method="post">
+        <h3>Name: <input type="text" name="name" required></h3>
+        <h3>Email: <input type="email" name="email" required></h3>
+        <h3>From: <input type="text" name="from" required></h3>
+        <h3>To: <input type="text" name="to" required></h3>
+        <h3>Departure Date: <input type="date" name="departureDate" required></h3>
+        <h3>Departure Time: <input type="time" name="departureTime" required></h3>
+        <h3>Age: <input type="number" name="age" required></h3> 
+        <h3>Return Date: <input type="date" name="returnDate"></h3>
+        <h3>Any Message: <input type="text" name="message"></h3>
+        <h3>Phone Number: <input type="text" name="phoneNumber" required></h3>
+        <input type="Submit" value="AddPassenger">
+    </form>
+    <div style="text-align: center;">
+        <h2><a href="listPassengers">View Passenger List</a></h2>
+    </div>
+</body>
+</html>
